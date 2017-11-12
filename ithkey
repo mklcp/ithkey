@@ -1,0 +1,69 @@
+partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    include "level3(ralt_switch)"
+    include "keypad(oss)"
+    name[Group1]= "ithkey";
+
+    key <TLDE> { [ UC007F, UC007F, UC002A ] }; // @
+
+    key <AE01> { [ UC0050, UC0004, UC002B ] }; // 1
+    key <AE02> { [ UC0051, UC0005, UC002C ] }; // 2
+    key <AE03> { [ UC0052, UC0006, UC002D ] }; // 3
+    key <AE04> { [ UC0053, UC0007, UC002E ] }; // 4
+    key <AE05> { [ UC0054, UC0008, UC002F ] }; // 5
+    key <AE06> { [ UC0055, UC0009, UC0030 ] }; // 6
+    key <AE07> { [ UC0056, UC000A, UC0031 ] }; // 7
+    key <AE08> { [ UC0057, UC000B, UC0032 ] }; // 8
+    key <AE09> { [ UC0058, UC000C, UC0033 ] }; // 9
+    key <AE10> { [ UC0059, UC000D, UC0034 ] }; // 1e1
+    key <AE11> { [ UC005A, UC000E, UC0035 ] }; // 1e2
+    key <AE12> { [ UC005B, UC000F, UC0036 ] }; // 1e4
+
+    key <TAB> { [ Tab, Tab, Tab ] };
+
+    key <AD01> { [ UC0012, UC0045, UC0050 ] }; // q
+    key <AD02> { [ UC0013, UC003C, UC0051 ] }; // w
+    key <AD03> { [ UC0014, UC0042, UC0052 ] }; // ţ
+    key <AD04> { [ UC0015, UC004A, UC0053 ] }; // r
+    key <AD05> { [ UC0016, UC0037, UC0054 ] }; // t
+    key <AD06> { [ UC0017, UC0039, UC0055 ] }; // y
+    key <AD07> { [ UC0018, UC0049, UC0056 ] }; // č
+    key <AD08> { [ UC0019, UC0038, UC0057 ] }; // k
+    key <AD09> { [ UC001A, UC003A, UC0058 ] }; // p
+    key <AD10> { [ UC005C, UC0052, UC0059 ] }; // 0xc0052
+    key <AD11> { [ UC005D, UC0053, UC005A ] }; // 0xc0053
+    key <AD12> { [ UC005E, UC0010, UC005B ] }; // 1e8
+
+    key <CAPS> { [ Caps_Lock, Caps_Lock, Caps_Lock ], actions = [ SetMods(modifiers=Shift), LockMods(modifiers=Lock) ] }; //
+
+    key <AC01> { [ UC001B, UC0047, UC005C ] }; // q'
+    key <AC02> { [ UC001C, UC004C, UC005D ] }; // s
+    key <AC03> { [ UC001D, UC0043, UC005E ] }; // c'
+    key <AC04> { [ UC001E, UC0041, UC005F ] }; // f
+    key <AC05> { [ UC001F, UC003E, UC0060 ] }; // t'
+    key <AC06> { [ UC0020, UC003D, UC0061 ] }; // h
+    key <AC07> { [ UC0021, UC004D, UC0062 ] }; // č'
+    key <AC08> { [ UC0022, UC0040, UC0063 ] }; // k'
+    key <AC09> { [ UC0023, UC0044, UC0064 ] }; // p'
+    key <AC10> { [ UC005F, UC0050, UC0065 ] }; // 0xc0050
+    key <AC11> { [ UC0060, UC0051, UC0066 ] }; // 0xc0051
+    key <BKSL> { [ UC0061, UC0011, UC004F ] } ; // 1e16
+
+    key <LFSH> { type[group1] = "ONE_LEVEL", [  Shift_L ] };
+    key <LSGT> { [ UC004F, UC004F, UC004F ] }; // ''''
+
+    key <AB01> { [ UC0003, UC0003, UC0067 ] }; // -
+    key <AB02> { [ UC0024, UC0046, UC0068 ] }; // x
+    key <AB03> { [ UC0025, UC0048, UC0069 ] }; // c
+    key <AB04> { [ UC0026, UC004B, UC006A ] }; // š
+    key <AB05> { [ UC0027, UC004E, UC006B ] }; // |
+    key <AB06> { [ UC0028, UC003F, UC006C ] }; // ň
+    key <AB07> { [ UC0029, UC003B, UC006D ] }; // m
+    key <AB08> { [ UC0000, UC0000, UC006E ] }; // '
+    key <AB09> { [ UC0001, UC0001, UC006F ] }; // ''
+    key <AB10> { [ UC0002, UC0002, UC0070 ] }; // '''
+
+    key <RTSH> { type[group1] = "ONE_LEVEL", [  Shift_R ] };
+    key <SPCE> { [ space, underscore ] }; // space
+};
