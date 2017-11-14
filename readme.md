@@ -2,8 +2,8 @@
 This repo hosts an [ithkuil](http://ithkuil.net) keyboard compatible with [Ykulvaarlck](https://github.com/Ykulvaarlck)'s ithkuil [font](https://fontstruct.com/fontstructions/show/1337265/ithkuil-3).
 
 ## Credits
-The font is all up to Ykulvaarlck.  
-The writing system and ithkuil by itself are ©2004-2011 by John Quijada. This project only aims to ease writing in ithkuil on a computer.
+The writing system and ithkuil by itself are ©2004-2011 by John Quijada. This project only aims to ease writing in ithkuil on a computer.  
+The font is all up to Ykulvaarlck, as well as most of examples files. The various keyboard files are made by melopee.
 
 ## Install
 Install the font in the appropriate way in system.  
@@ -43,6 +43,8 @@ After, add the keyboard in the keyboard window from the ‘Preferences and Setti
 Execute the file named `setup.exe` in the `ithm` folder contained in this repository, which should install the dynamic library suited to the computer system.
 
 ## Troubleshootings
+Disclaimer: the font is not yet finished, lacks advanced diacritic positioning and kerning. However it's still pretty usable (and useful), enough at least to make a keyboard.
+
 The font makes an heavy uses of combining diacritics, and so the keyboard. At least in some applications, they might not be displayed correctly (where correctly means ‘should change the previous character either by addding a diacritic, changing its shape, or its orientation, depending on the diacritic and its position on after the character’ (more on that later)), and one might instead see a some numbers, a blank space, or either a box with or without a question mark, instead of the character. This might be explained by either a bad unicode support, a bad management of the font or a problem in choosing the font, among other possible problems.
 
 At least, displaying in a browser should still works. To try it, open in a brower the file named `test.html`, which contains. If tables of itkuil letters are displayed, with a bunch of nicely handled diacritics, it probably works.  
@@ -128,6 +130,8 @@ One may also interested in the following tables, which explicits the encoded and
 ![](./ithkuil_font_map_00-4f.png)
 
 ![](./ithkuil_font_map_00-7f.png)
+
+More examples can be found in the `test.html` file, to be opened with a browser. This file presents also some tests the max range of diacritic uses for one diacritic slot after a base char, it may be interesting to see them to understand how work the font.
 
 ## Logic of the keyboard
 Here is the current maps of the keyboard. The numbers to the right precise the row level, and the letters are the same abbreviations as used before, only in lowercase for convenience.
